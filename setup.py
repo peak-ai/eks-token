@@ -5,7 +5,7 @@ with open('README.md') as readme:
 
 setup(
     name='eks_token',
-    version='0.0.1c0',
+    version='0.1.0',
     author='Peak AI',
     author_email='support@peak.ai',
     description='EKS Token package, an alternate to "aws eks get-token ..." CLI',
