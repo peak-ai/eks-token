@@ -1,6 +1,10 @@
 # eks-token
 EKS Token package, an alternate to "aws eks get-token ..." CLI
 
+![CodeQuality](https://github.com/peak-ai/eks-token/workflows/CodeQL/badge.svg) ![Publish](https://github.com/peak-ai/eks-token/workflows/Upload%20Python%20Package/badge.svg) ![stable](https://img.shields.io/github/v/release/peak-ai/eks-token) ![](https://img.shields.io/github/v/release/peak-ai/eks-token?include_prereleases) ![](https://img.shields.io/github/license/peak-ai/eks-token) ![](https://img.shields.io/github/languages/count/peak-ai/eks-token) ![](https://img.shields.io/github/languages/top/peak-ai/eks-token) ![](https://img.shields.io/github/issues-raw/peak-ai/eks-token) ![](https://img.shields.io/github/issues-pr-raw/peak-ai/eks-token) ![](https://img.shields.io/github/languages/code-size/peak-ai/eks-token) ![](https://img.shields.io/github/repo-size/peak-ai/eks-token)
+
+![logo](https://raw.githubusercontent.com/peak-ai/eks-token/master/eks-iam.png)
+
 ## Usage
 
 ### Installation
@@ -19,7 +23,7 @@ response = get_token(cluster_name='<value>')
 pprint(response)
 ```
 Expected Output
-```json
+```python
 {'apiVersion': 'client.authentication.k8s.io/v1alpha1',
  'kind': 'ExecCredential',
  'spec': {},
