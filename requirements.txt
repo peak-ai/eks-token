@@ -11,7 +11,7 @@ importlib-metadata==2.0.0
 isort==5.5.4
 jmespath==0.10.0
 keyring==21.4.0
-lazy-object-proxy==0.0.0
+lazy-object-proxy==1.4.0
 mccabe==0.6.1
 packaging==20.4
 pkginfo==1.5.0.1
