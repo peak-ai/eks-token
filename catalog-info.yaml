@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eks-token
+  description: Package used to generate an aws eks token.
+  annotations:
+    github.com/project-slug: peak-ai/eks-token
+    backstage.io/techdocs-ref: url:https://github.com/peak-ai/eks-token
+  tags:
+    - python
+    - eks-token
+spec:
+  type: library
+  lifecycle: production
+  owner: squad-dock-maverick
