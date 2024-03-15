@@ -14,7 +14,7 @@ def get_token(cluster_name: str, role_arn: str = None) -> dict:
     token = TokenGenerator(sts_client).get_token(cluster_name)
     return {
             "kind": "ExecCredential",
-            "apiVersion": "client.authentication.k8s.io/v1alpha1",
+            "apiVersion": "client.authentication.k8s.io/v1beta1",
             "spec": {},
             "status": {
                 "expirationTimestamp": get_expiration_time(),
