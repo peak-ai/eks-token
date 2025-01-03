@@ -50,5 +50,18 @@ token = get_token(cluster_name='<value>', role_arn='<value>')['status']['token']
 print(token)
 ```
 
+### Custom region
+
+```python
+from eks_token import get_token
+
+cluster_name = "your-cluster-name"
+role_arn = "your-role-arn"
+region_name = "your-region-name"
+
+token = get_token(cluster_name, role_arn=role_arn, region_name=region_name)
+print(token)
+```
+
 ## Contribution
 Check our guidelines [here](CONTRIBUTING.md)

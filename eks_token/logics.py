@@ -9,8 +9,8 @@ def get_expiration_time():
         token_expiration = datetime.utcnow() + timedelta(minutes=TOKEN_EXPIRATION_MINS)
         return token_expiration.strftime('%Y-%m-%dT%H:%M:%SZ')
     
-def get_token(cluster_name: str, role_arn: str = None) -> dict:
-    sts_client = client_factory.get_sts_client(role_arn=role_arn)
+def get_token(cluster_name: str, role_arn: str = None, region_name: str = None) -> dict:
+    sts_client = client_factory.get_sts_client(role_arn=role_arn, region_name=region_name)
     token = TokenGenerator(sts_client).get_token(cluster_name)
     return {
             "kind": "ExecCredential",
